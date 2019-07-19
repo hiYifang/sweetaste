@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>六角甜點工坊 - 運送</title>
+
+  <link rel="icon" href="images/present.png">
+
+  <meta property="og:title" content="六角甜點工坊" />
+  <meta property="og:description" content="甜點工坊" />
+
+  <link rel="apple-touch-icon" href="images/logo-all-dark.svg" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+  <link rel="stylesheet" href="/stylesheets/all.css">
+
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    .bg-cover {
+      background-size: cover;
+      background-position: center center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <button class="navbar-toggler d-md-none d-flex align-items-center" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">
+        <img class="d-md-none d-inline-block" src="images/logotype-sm-dark.svg" height="18">
+        <img class="d-md-inline-block d-none" src="images/logo-all-dark.svg" height="40">
+      </a>
+
+      <a class="nav-link d-flex align-items-center order-md-1 active" href="cart.html">
+        <i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span>
+      </a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-info" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="product.html">甜點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 內容 -->
+  <div class="container my-lg-6">
+    <div class="row cart">
+      <div class="col-lg-8">
+        <div class="negative-row-margin mx-lg-0">
+          <div class="bg-primary text-success h4 p-5 mb-0">
+            <!-- 左側上方 -->
+            <div class="form-row mb-5">
+              <!-- 標題 -->
+              <div class="col-6">
+                <h1 class="text-success">運送</h1>
+              </div>
+              <!-- 進度條 -->
+              <div class="col-6 d-flex align-items-center">
+                <div class="process-steps w-100">
+                  <div class="step-circle active"></div>
+                  <div class="step-circle"></div>
+                  <div class="step-circle"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 驗證表單 -->
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label for="inputUser" class="mb-3">姓氏*</label>
+                  <input type="text" class="form-control form-control-lg" id="inputUser" placeholder="王" required>
+                  <div class="invalid-feedback">請輸入姓氏(此欄位必填)</div>
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputName" class="mb-3">名字*</label>
+                  <input type="text" class="form-control form-control-lg" id="inputName" placeholder="小明" required>
+                  <div class="invalid-feedback">請輸入名字(此欄位必填)</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputPhone" class="mb-3">電話*</label>
+                <input type="tel" class="form-control form-control-lg" id="inputPhone" placeholder="0912-345-678" required>
+                <div class="invalid-feedback">請輸入電話號碼(此欄位必填)</div>
+              </div>
+
+              <label for="inputAddress" class="mb-3">地址*</label>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <select class="custom-select custom-select-lg" required>
+                    <option value="高雄市">高雄市</option>
+                    <option value="台北市">台北市</option>
+                    <option value="台中市">台中市</option>
+                    <option value="台南市">台南市</option>
+                  </select>
+                  <div class="invalid-feedback">請選擇正確的地址(此欄位必填)</div>
+                </div>
+
+                <div class="form-group col-6">
+                  <select class="custom-select custom-select-lg" required>
+                    <option value="新興區">新興區</option>
+                    <option value="信義區">信義區</option>
+                    <option value="大里區">大里區</option>
+                    <option value="安平區">安平區</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" id="inputAddress" placeholder="幸福路 520 號" required>
+                <div class="invalid-feedback">請輸入正確的地址(此欄位必填)</div>
+              </div>
+
+              <!-- 按鈕 有驗證 -->
+              <div class="d-none d-lg-block">
+                <button type="submit" class="btn btn-block btn-lg btn-checkout py-3">提交</button>
+              </div>
+
+            </form>
+
+            <!-- 瀏覽器驗證機制 -->
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+
+          </div>
+
+          <!-- 按鈕 無驗證 -->
+          <div class="d-block d-lg-none">
+            <a class="btn btn-block btn-lg btn-checkout py-3" href="checkoutTwo.html">下一步</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-none d-lg-block">
+        <!-- 訂單 標題 -->
+        <h2 class="py-2 mb-0 text-center text-info bg-success font-weight-bolder">訂單摘要</h2>
+        <div class="cart-checkout-box mb-3">
+          <!-- 訂單 內容 -->
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td class="text-info py-1">小計</td>
+                <td class="text-info text-right py-1">NT$ 2,700</td>
+              </tr>
+              <tr>
+                <td class="text-info py-1">運費</td>
+                <td class="text-info text-right py-1">NT$ 300</td>
+              </tr>
+              <tr>
+                <td class="h4 font-weight-bolder text-info py-1">總計</td>
+                <td class="h4 font-weight-bolder text-info text-right py-1">NT$ 3,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 訂單 標題 -->
+        <h2 class="py-2 mb-0 text-center text-info bg-success font-weight-bolder">購物清單</h2>
+        <div class="cart-checkout-box">
+          <!-- 訂單 內容 -->
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="checkout-image bg-cover mr-3"
+                    style="background-image: url('https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=800&q=60')">
+                  </div>
+                </td>
+                <td class="align-middle h5 text-info">奇異紅豆冰 (2) <br><span class="text-info">NT$ 900</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="checkout-image bg-cover mr-3"
+                    style="background-image: url('https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60')">
+                  </div>
+                </td>
+                <td class="align-middle h5 text-info">覆盆草莓派 (2) <br><span class="text-info">NT$ 900</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="checkout-image bg-cover mr-3"
+                    style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60')">
+                  </div>
+                </td>
+                <td class="align-middle h5 text-info">莓心情蛋糕 (2) <br><span class="text-info">NT$ 900</span></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- email -->
+  <section class="bg-primary py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 d-flex justify-content-center align-items-center mb-4">
+          <img src="images/logo-light.svg" width="40px" height="40px">
+          <span class="h4 text-white ml-4 mb-0">訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="col-md-5">
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-success"><i class="fas fa-envelope text-primary"></i></span>
+            </div>
+            <input type="text" class="form-control bg-success border-0" placeholder="Enter email">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-success py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 d-flex flex-column justify-content-between">
+          <div>
+            <img src="images/logotype-lg-dark.svg" width="170px" height="26px">
+          </div>
+
+          <ul class="list-unstyled text-primary mt-5">
+            <li>07-1234-5678</li>
+            <li><a href="#">sweetaste@email.com</a></li>
+            <li>800 高雄市新興區幸福路 520 號</li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-right d-md-block d-none">
+          <img src="images/sm-今天是個吃甜點的好日子.svg" width="60px" height="220px">
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-5 mt-2">
+          <img src="images/ic-line@.svg" width="32px" height="32px">
+          <img src="images/ic-facebook.svg" width="32px" height="32px">
+        </div>
+        <div class="col-md-5 text-md-right mt-2">
+          <span class="text-primary">© 2019 Sweetaste* All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/javascripts/vendor.js"></script>
+
+</body>
+
+</html>
