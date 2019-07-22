@@ -16,19 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
   <link rel="stylesheet" href="stylesheets/all.css">
-
-  <style>
-    html {
-      font-size: 16px;
-    }
-
-    .bg-cover {
-      background-size: cover;
-      background-position: center center;
-    }
-  </style>
 
 </head>
 
@@ -95,19 +83,19 @@
               <div class="form-row">
                 <div class="form-group col-6">
                   <label for="inputUser" class="mb-3">姓氏*</label>
-                  <input type="text" class="form-control form-control-lg" id="inputUser" placeholder="王" required>
+                  <input type="text" class="form-control form-control-lg rounded-0" id="inputUser" placeholder="王" required>
                   <div class="invalid-feedback">請輸入姓氏(此欄位必填)</div>
                 </div>
                 <div class="form-group col-6">
                   <label for="inputName" class="mb-3">名字*</label>
-                  <input type="text" class="form-control form-control-lg" id="inputName" placeholder="小明" required>
+                  <input type="text" class="form-control form-control-lg rounded-0" id="inputName" placeholder="小明" required>
                   <div class="invalid-feedback">請輸入名字(此欄位必填)</div>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="inputPhone" class="mb-3">電話*</label>
-                <input type="tel" class="form-control form-control-lg" id="inputPhone" placeholder="0912-345-678" required>
+                <input type="tel" class="form-control form-control-lg rounded-0" id="inputPhone" placeholder="0912-345-678" required>
                 <div class="invalid-feedback">請輸入電話號碼(此欄位必填)</div>
               </div>
 
@@ -134,13 +122,13 @@
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control form-control-lg" id="inputAddress" placeholder="幸福路 520 號" required>
+                <input type="text" class="form-control form-control-lg rounded-0" id="inputAddress" placeholder="幸福路 520 號" required>
                 <div class="invalid-feedback">請輸入正確的地址(此欄位必填)</div>
               </div>
 
               <!-- 按鈕 有驗證 -->
               <div class="d-none d-lg-block">
-                <button type="submit" class="btn btn-block btn-lg btn-checkout py-3">提交</button>
+                <button type="submit" class="btn btn-block btn-lg btn-checkout rounded-0 py-3">提交</button>
               </div>
 
             </form>
@@ -171,7 +159,7 @@
 
           <!-- 按鈕 無驗證 -->
           <div class="d-block d-lg-none">
-            <a class="btn btn-block btn-lg btn-checkout py-3" href="checkoutTwo.html">下一步</a>
+            <a class="btn btn-block btn-lg btn-checkout rounded-0 py-3" href="checkoutTwo.html">下一步</a>
           </div>
         </div>
       </div>
@@ -255,9 +243,9 @@
             <div class="input-group-prepend">
               <span class="input-group-text bg-success"><i class="fas fa-envelope text-primary"></i></span>
             </div>
-            <input type="text" class="form-control bg-success border-0" placeholder="Enter email">
+            <input type="email" class="form-control form-control-lg bg-success border-0" placeholder="Enter email">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-right"></i></button>
+              <button class="btn btn-secondary text-primary pl-4 pr-4" type="button"><i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
@@ -276,7 +264,7 @@
 
           <ul class="list-unstyled text-primary mt-5">
             <li>07-1234-5678</li>
-            <li><a href="#">sweetaste@email.com</a></li>
+            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
             <li>800 高雄市新興區幸福路 520 號</li>
           </ul>
         </div>
@@ -290,13 +278,13 @@
           <img src="images/ic-facebook.svg" width="32px" height="32px">
         </div>
         <div class="col-md-5 text-md-right mt-2">
-          <span class="text-primary">© 2019 Sweetaste* All Rights Reserved</span>
+          <span class="text-primary">© 2018 Sweetaste* All Rights Reserved</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="/javascripts/vendor.js"></script>
+  <script src="javascripts/vendor.js"></script>
 
 </body>
 

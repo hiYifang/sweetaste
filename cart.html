@@ -16,19 +16,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+  <!-- fa 開頭使用 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css"> -->
   <link rel="stylesheet" href="stylesheets/all.css">
-
-  <style>
-    html {
-      font-size: 16px;
-    }
-
-    .bg-cover {
-      background-size: cover;
-      background-position: center center;
-    }
-  </style>
 
 </head>
 
@@ -112,8 +101,8 @@
           </div>
           <!-- 總價 刪除 -->
           <div class="total ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="奇異紅豆冰"><i
-                class="fa fa-trash-o"></i></a>
+            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="奇異紅豆冰">
+                <i class="fas fa-trash"></i></a>
             <span class="h5 mb-0 mr-md-3 text-primary font-weight-bolder">NT$ 900</span>
           </div>
         </div>
@@ -155,8 +144,7 @@
           </div>
           <!-- 總價 刪除 -->
           <div class="total ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="覆盆草莓派"><i
-                class="fa fa-trash-o"></i></a>
+            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="覆盆草莓派"><i class="fas fa-trash"></i></a>
             <span class="h5 mb-0 mr-md-3 text-primary font-weight-bolder">NT$ 900</span>
           </div>
         </div>
@@ -198,8 +186,7 @@
           </div>
           <!-- 總價 刪除 -->
           <div class="total ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
-            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="莓心情蛋糕"><i
-                class="fa fa-trash-o"></i></a>
+            <a class="d-none d-md-block" href="#" data-toggle="modal" data-target="#removeModal" data-title="莓心情蛋糕"><i class="fas fa-trash"></i></a>
             <span class="h5 mb-0 mr-md-3 text-primary font-weight-bolder">NT$ 900</span>
           </div>
         </div>
@@ -251,9 +238,9 @@
             <div class="input-group-prepend">
               <span class="input-group-text bg-success"><i class="fas fa-envelope text-primary"></i></span>
             </div>
-            <input type="text" class="form-control bg-success border-0" placeholder="Enter email">
+            <input type="email" class="form-control form-control-lg bg-success border-0" placeholder="Enter email">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-right"></i></button>
+              <button class="btn btn-secondary text-primary pl-4 pr-4" type="button"><i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
@@ -272,7 +259,7 @@
 
           <ul class="list-unstyled text-primary mt-5">
             <li>07-1234-5678</li>
-            <li><a href="#">sweetaste@email.com</a></li>
+            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
             <li>800 高雄市新興區幸福路 520 號</li>
           </ul>
         </div>
@@ -286,7 +273,7 @@
           <img src="images/ic-facebook.svg" width="32px" height="32px">
         </div>
         <div class="col-md-5 text-md-right mt-2">
-          <span class="text-primary">© 2019 Sweetaste* All Rights Reserved</span>
+          <span class="text-primary">© 2018 Sweetaste* All Rights Reserved</span>
         </div>
       </div>
     </div>
@@ -314,7 +301,7 @@
     </div>
   </div>
 
-  <script src="/javascripts/vendor.js"></script>
+  <script src="javascripts/vendor.js"></script>
 
   <!-- 使用 Modal -->
   <script>

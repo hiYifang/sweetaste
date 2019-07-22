@@ -16,19 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
   <link rel="stylesheet" href="stylesheets/all.css">
-
-  <style>
-    html {
-      font-size: 16px;
-    }
-
-    .bg-cover {
-      background-size: cover;
-      background-position: center center;
-    }
-  </style>
 
 </head>
 
@@ -95,7 +83,7 @@
 
               <label for="inputCard" class="mb-3">信用卡卡號*</label>
               <div class="input-group mb-3">
-                <input type="text" class="form-control form-control-lg border-0" id="inputCard" placeholder="9012-3456-7890-1234" required>
+                <input type="text" class="form-control form-control-lg border-0 rounded-0" id="inputCard" placeholder="9012-3456-7890-1234" required>
                 <div class="input-group-append">
                   <span class="input-group-text bg-light border-0"><i class="far fa-credit-card text-primary"></i></span>
                 </div>
@@ -105,11 +93,11 @@
               <label for="inputUser" class="mb-3">持卡人姓名*</label>
               <div class="form-row">
                 <div class="form-group col-6">
-                  <input type="text" class="form-control form-control-lg" id="inputUser" placeholder="王" required>
+                  <input type="text" class="form-control form-control-lg rounded-0" id="inputUser" placeholder="王" required>
                   <div class="invalid-feedback">請輸入持卡人姓名(此欄位必填)</div>
                 </div>
                 <div class="form-group col-6">
-                  <input type="text" class="form-control form-control-lg" placeholder="小明" required>
+                  <input type="text" class="form-control form-control-lg rounded-0" placeholder="小明" required>
                 </div>
               </div>
 
@@ -146,14 +134,14 @@
 
               <div class="form-group">
                 <label for="inputNumber" class="mb-3">背面末三碼*</label>
-                <input type="number" class="form-control form-control-lg" id="inputNumber" placeholder="123" min="0"
+                <input type="number" class="form-control form-control-lg rounded-0" id="inputNumber" placeholder="123" min="0"
                   max="999" required>
                 <div class="invalid-feedback">請輸入信用卡背面末三碼(此欄位必填)</div>
               </div>
 
               <!-- 按鈕 有驗證 -->
               <div class="d-none d-lg-block">
-                  <button type="submit" class="btn btn-block btn-lg btn-checkout py-3">提交</button>
+                  <button type="submit" class="btn btn-block btn-lg btn-checkout rounded-0 py-3">提交</button>
               </div>
 
             </form>
@@ -184,7 +172,7 @@
 
           <!-- 按鈕 無驗證 -->
           <div class="d-block d-lg-none">
-            <a class="btn btn-block btn-lg btn-checkout py-3" href="checkoutThree.html">下一步</a>
+            <a class="btn btn-block btn-lg btn-checkout rounded-0 py-3" href="checkoutThree.html">下一步</a>
           </div>
         </div>
       </div>
@@ -268,9 +256,9 @@
             <div class="input-group-prepend">
               <span class="input-group-text bg-success"><i class="fas fa-envelope text-primary"></i></span>
             </div>
-            <input type="text" class="form-control bg-success border-0" placeholder="Enter email">
+            <input type="email" class="form-control form-control-lg bg-success border-0" placeholder="Enter email">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-right"></i></button>
+              <button class="btn btn-secondary text-primary pl-4 pr-4" type="button"><i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
         </div>
@@ -289,7 +277,7 @@
 
           <ul class="list-unstyled text-primary mt-5">
             <li>07-1234-5678</li>
-            <li><a href="#">sweetaste@email.com</a></li>
+            <li><a href="mailto:sweetaste@email.com">sweetaste@email.com</a></li>
             <li>800 高雄市新興區幸福路 520 號</li>
           </ul>
         </div>
@@ -303,13 +291,13 @@
           <img src="images/ic-facebook.svg" width="32px" height="32px">
         </div>
         <div class="col-md-5 text-md-right mt-2">
-          <span class="text-primary">© 2019 Sweetaste* All Rights Reserved</span>
+          <span class="text-primary">© 2018 Sweetaste* All Rights Reserved</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="/javascripts/vendor.js"></script>
+  <script src="javascripts/vendor.js"></script>
 
 </body>
 
